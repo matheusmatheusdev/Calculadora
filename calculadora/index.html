@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+
+    
+
+        <form action="" name="Calculator" class="calculadora">
+
+           <div class="divresultado">
+             <input type="text" value="" class="div__inputResultado" name="text1" disabled>
+           </div>
+           
+          <div class="itens-calc-numerosop">
+            <div class="operacoes">
+               <div class="digito"><input type="button" value="9" class="num inputButton" name="button9" onclick="displaynum(button9.value)"></div>
+               <div class="digito"><input type="button" value="8" class="num inputButton" name="button8" onclick="displaynum(button8.value)"></div>
+               <div class="digito"><input type="button" value="7" class="num inputButton" name="button7" onclick="displaynum(button7.value)"></div>
+               <div class="digito"><input type="button" value="&#128472;" class="num refresh" name="text2" onclick="location.reload()"></div>
+            </div>
+
+            <div class="operacoes">
+               <div class="digito"><input type="button" value="6" class="num inputButton" name="button6" onclick="displaynum(button6.value)"></div>
+               <div class="digito"><input type="button" value="5" class="num inputButton" name="button5" onclick="displaynum(button5.value)"></div>
+               <div class="digito"><input type="button" value="4" class="num inputButton" name="button4" onclick="displaynum(button4.value)"></div>
+               <div class="digito"><input type="button" value="*" class="num multiplicar" name="multbutton" onclick="displaynum(multbutton.value)"></div>
+            </div>
+
+             <div class="operacoes">
+               <div class="digito"><input type="button" value="3" class="num inputButton" name="button3" onclick="displaynum(button3.value)"></div>
+               <div class="digito"><input type="button" value="2" class="num inputButton" name="button2" onclick="displaynum(button2.value)"></div>
+               <div class="digito"><input type="button" value="1" class="num inputButton" name="button1" onclick="displaynum(button1.value)"></div>
+               <div class="digito"><input type="button" placeholder="()" value="/" class="num divisao" name="divbutton" onclick="displaynum(divbutton.value)"></div> 
+             </div>
+
+             <div class="operacoes">
+               <div class="digito"><input type="button" value="(" class="num paresq" name="paresqbutton" onclick="displaynum(paresqbutton.value)"></div>
+               <div class="digito"><input type="button" value="0" class="num inputButton" name="button0" onclick="displaynum(button0.value)"></div>
+               <div class="digito"><input type="button" value=")" class="num pardir" name="pardirbutton" onclick="displaynum(pardirbutton.value)"></div>
+               <div class="digito"><input type="button" value="+" class="num buttonmais" name="addbutton" onclick="displaynum(addbutton.value)"></div>
+             </div>
+
+             <div class="operacoes">
+               <div class="digito"><input type="button" value="." class="num inputButton" name="pontobutton" onclick="displaynum(pontobutton.value)"></div>
+               <div class="digito"><input type="button" value="x" class="num excluir" name="excbutton" onclick="del()"></div>
+               <div class="digito"><input type="button" value="-" class="num menos" name="subbutton" onclick="displaynum(subbutton.value)"></div>
+               <div class="digito"><input type="button" value="=" class="num igual" name="igualbutton" onclick="text1.value=eval(text1.value)"></div>
+             </div>
+             <input type="checkbox" id="switch" name="theme" class="checkbox">
+             <label for="switch" class="labelCheckbox"></label>
+          </div>
+
+        </form>
+  </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
